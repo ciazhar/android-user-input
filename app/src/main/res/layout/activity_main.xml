@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ciazhar.userinput.MainActivity"
+    android:padding="16px"
+    >
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/edit_nama"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:hint="Masukkan Nama Anda"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Question"
+            android:layout_margin="16dp"
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Siapa Nama Tokoh Utama Anime Naruto?"
+            android:layout_margin="16dp"
+            />
+        <RadioGroup
+            android:id="@+id/rbgsatu"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/rbnaruto"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Naruto"
+                />
+            <RadioButton
+                android:id="@+id/rbsakura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sakura" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Kapan nikah ?"
+            android:layout_margin="16dp"
+            />
+        <RadioGroup
+            android:id="@+id/rbgdua"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/rbkapankapan"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Kapan Kapan"
+                />
+            <RadioButton
+                android:id="@+id/rbkapankapan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sehabis Kapan Kapan" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Submit"
+            android:layout_margin="30dp"
+            />
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:padding="10dp"
+            android:foreground="?attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nama"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/cvnama"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Jawaban pertama"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/cvjawabansatu"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jawaban pertama"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Jawaban kedua"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/cvjawabandua"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jawaban kedua"/>
+                </LinearLayout><LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nilai Anda"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/cvnilai"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nilai"/>
+            </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
